@@ -27,7 +27,8 @@
     font-size: 12px;
   }
   .subscription-form {
-    input, .input {
+    input,
+    .input {
       max-width: 70%;
     }
   }
@@ -47,6 +48,15 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+  .about-about {
+    .about-advantages {
+      > .col {
+        svg {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
   .header-nav {
     .nav-item {
       margin-right: 10px;
@@ -87,13 +97,72 @@
       height: 130px;
     }
   }
-
+  .about-about {
+    p {
+      font-size: 12px;
+    }
+    .about-headline,
+    .about-about-text p {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0 10px;
+    }
+    .about-circles {
+      padding: 40px 0;
+      svg {
+        max-width: 260px;
+      }
+      .about-circles-consumer {
+        margin-top: -105px;
+      }
+      .about-circles-consumer,
+      .about-circles-artist {
+        padding: 0 50px;
+        > * {
+          max-width: 200px;
+        }
+      }
+      .about-circles-artist {
+        margin-top: -230px;
+      }
+    }
+    .about-advantages {
+      padding-top: 0;
+      > .col {
+        svg {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
   .border-center-item {
     border-right: 0;
     border-left: 0;
     padding: 0;
   }
-
+  .border-mob-top-none {
+    border-top: 0;
+  }
+  .border-mob-bottom-none {
+    border-bottom: 0;
+  }
+  .border-mob-x-none {
+    border-right: 0;
+    border-left: 0;
+  }
+  .border-mob-y-none {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .border-mob-none {
+    border: 0;
+  }
+  .border-top-mob-item {
+    border-top: $defaultBorder;
+  }
+  .border-top-bottom-item {
+    border-bottom: $defaultBorder;
+  }
   .default-btn {
     width: 100%;
     min-width: 100%;
@@ -269,7 +338,8 @@
     .mobile-lang {
       width: 50%;
 
-      a, span {
+      a,
+      span {
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
@@ -453,7 +523,7 @@
 
       .onClickPopup {
         width: 70px;
-        border-right: 3px solid #5F48E9;
+        border-right: 3px solid #5f48e9;
 
         &::before {
           width: 99px;
@@ -519,16 +589,27 @@
       }
     }
   }
+  .about-circles {
+    padding: 50px 0;
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  .about-about {
+    .about-advantages {
+      > .col {
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
   .main-about {
     .col-bg {
       height: 130px;
     }
   }
-
   .white-popup .popup-content .artist-notify-ok .ok-btn .ok-text {
     font-size: 12px;
     top: -20px;
@@ -580,7 +661,8 @@
     min-height: auto;
     padding: 40px 50px;
 
-    p, span {
+    p,
+    span {
       font-size: 12px;
     }
 
