@@ -32,6 +32,13 @@
       max-width: 70%;
     }
   }
+  .social-network {
+    .ya-share2__container_size_m {
+      .ya-share2__item {
+        margin: 0 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1110px) {
@@ -53,6 +60,33 @@
       > .col {
         svg {
           padding: 0 20px;
+        }
+      }
+    }
+  }
+  .social-network {
+    .ya-share2__container_size_m {
+      .ya-share2__item {
+        .ya-share2__badge {
+          background-color: $primaryColor;
+          border-radius: 50%;
+          border-radius: 50% !important;
+        }
+        .ya-share2__icon {
+          height: 34px;
+          width: 34px;
+          background-size: 34px 34px;
+        }
+        &.ya-share2__item_service_facebook {
+          .ya-share2__icon {
+            background-size: 42px 42px;
+          }
+        }
+        &.ya-share2__item_service_vkontakte {
+          .ya-share2__icon {
+            background-size: 42px 42px;
+            background-position: -4px -3px;
+          }
         }
       }
     }

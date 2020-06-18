@@ -307,3 +307,37 @@ svg {
 .left-align-slick > .slick-list > .slick-track {
   margin-left: 0;
 }
+
+.social-network {
+  .ya-share2__container_size_m {
+    .ya-share2__item {
+      margin: 0 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+      .ya-share2__badge {
+        background-color: $primaryColor;
+        border-radius: 50%;
+        border-radius: 50% !important;
+        padding: 4px;
+      }
+      .ya-share2__icon {
+        height: 52px;
+        width: 52px;
+        background-size: 52px 52px;
+        background-repeat: no-repeat;
+      }
+      &.ya-share2__item_service_facebook {
+        .ya-share2__icon {
+          background-size: 56px 56px;
+        }
+      }
+      &.ya-share2__item_service_vkontakte {
+        .ya-share2__icon {
+          background-size: 60px 60px;
+          background-position: -4px -3px;
+        }
+      }
+    }
+  }
+}
