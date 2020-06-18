@@ -1,7 +1,8 @@
 .footer {
   background-color: $primaryColor;
   color: #fff;
-
+  position: relative;
+  z-index: 10;
   .footer-bottom {
     margin-bottom: 20px;
 
@@ -74,7 +75,8 @@
   }
 
   .footer-logo {
-    img, svg {
+    img,
+    svg {
       width: 100%;
     }
   }

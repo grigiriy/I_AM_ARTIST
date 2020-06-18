@@ -6,15 +6,16 @@ textarea {
   outline: none;
   font-size: 25px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
 
-
-  &::-webkit-input-placeholder { /* Edge */
+  &::-webkit-input-placeholder {
+    /* Edge */
     color: $inputPrimaryColor;
   }
 
-  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: $inputPrimaryColor;
   }
 
@@ -28,4 +29,5 @@ input,
   max-width: 398px;
   padding: 31px 43px;
   text-align: center;
+  width: 100%;
 }
