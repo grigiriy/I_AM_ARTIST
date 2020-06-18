@@ -1,0 +1,22 @@
+.subscription-block {
+  height: 390px;
+
+  .col-line-bg {
+    background: url("/img/line-bg.jpg") center no-repeat;
+    background-size: contain;
+    height: 390px;
+  }
+
+  .subscription-form {
+    max-width: $blockMaxWidth;
+    text-align: center;
+    margin: 64px auto;
+
+    p {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 58px;
+    }
+  }
+}

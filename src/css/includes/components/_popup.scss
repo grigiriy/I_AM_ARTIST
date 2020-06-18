@@ -1,0 +1,199 @@
+.white-popup {
+  position: relative;
+  background: #FFF;
+  //padding: 20px;
+  width: auto;
+  max-width: 800px;
+  margin: 20px auto;
+  border: $defaultBorder;
+
+  &.popup-full {
+    max-width: 100%;
+    width: 100%;
+  }
+  .work-content {
+    max-width: 800px;
+    margin: auto;
+    border-left: $defaultBorder;
+    border-right: $defaultBorder;
+  }
+
+  .popup-close-btn {
+    height: 99px;
+    width: 100%;
+    border-bottom: $defaultBorder;
+    position: relative;
+    text-align: right;
+
+    .onClickPopup {
+      width: 99px;
+      height: 100%;
+      background: transparent;
+      border-width: 0;
+      border-left: $defaultBorder;
+      position: relative;
+      outline: none;
+      transition: background-color ease .2s;
+
+      &:hover {
+        background-color: $primaryColor;
+        transition: background-color ease .2s;
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 140px;
+        height: 3px;
+        left: -22px;
+        top: 46px;
+        transform: rotate(45deg);
+        background: $primaryColor;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 140px;
+        height: 3px;
+        left: -22px;
+        bottom: 46px;
+        transform: rotate(-45deg);
+        background: $primaryColor;
+      }
+    }
+  }
+
+  .popup-content {
+    .default-form-width {
+      max-width: 398px;
+      //margin: auto;
+    }
+
+    .text-message {
+      color: $primaryColor;
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      margin: 75px;
+    }
+
+    .artist-text-message {
+      text-align: center;
+      padding: 36px 45px;
+      border-bottom: $defaultBorder;
+
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+    }
+
+    .artist-form {
+      .centered-group {
+        text-align: center;
+      }
+    }
+
+    .artist-list {
+      border-top: $defaultBorder;
+      padding-left: 12.7%;
+
+      .artist-list-item {
+        border-bottom: $defaultBorder;
+
+        .list-number {
+          border-left: $defaultBorder;
+          border-right: $defaultBorder;
+          width: 100px;
+          height: 100px;
+
+          span {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+          }
+        }
+
+        .list-text {
+          padding: 20px 45px;
+
+          p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .artist-free-message {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      padding-left: 12.7%;
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+      }
+    }
+
+    .artist-submit {
+      border-top: $defaultBorder;
+      text-align: center;
+    }
+
+    .artist-notify-ok {
+      padding-left: 12.7%;
+
+      .ok-btn {
+        width: fit-content;
+        position: relative;
+        margin-right: 33px;
+        margin-bottom: 30px;
+
+        &:hover {
+          cursor: pointer;
+
+          svg path {
+            fill: $primaryColor;
+          }
+        }
+
+        .ok-text {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          text-align: center;
+          line-height: 77px;
+        }
+      }
+
+      .ok-message {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+
+        p {
+          margin-bottom: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

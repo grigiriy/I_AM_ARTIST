@@ -1,0 +1,47 @@
+.header {
+  border-bottom: $defaultBorder;
+
+  &-item {
+    height: 99px;
+    border-right: $defaultBorder;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+
+    &:first-child {
+      border-right: 0;
+    }
+
+    &:nth-child(2) {
+      //border-right: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    &-link {
+      display: block;
+      line-height: 99px;
+
+      &.hovered {
+        &:hover {
+          background-color: $primaryColor;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.right-item {
+      a {
+        border-right: $defaultBorder;
+        width: 50%;
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+}

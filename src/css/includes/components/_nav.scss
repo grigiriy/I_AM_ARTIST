@@ -1,0 +1,11 @@
+.header-nav {
+  .nav-item {
+    margin-right: 22px;
+
+    &.item-logo {
+      margin: 0 34px 0 17px;
+      position: relative;
+      top: -2px;
+    }
+  }
+}

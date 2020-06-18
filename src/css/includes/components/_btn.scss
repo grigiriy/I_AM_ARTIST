@@ -1,0 +1,34 @@
+.default-link-btn {
+  //transition: all ease .2s;
+
+  &:hover {
+    //background-color: $primaryColor;
+    //color: #fff;
+    text-decoration: underline;
+    //transition: all ease .2s;
+  }
+}
+
+.default-btn {
+  font-weight: 500;
+  font-size: 25px;
+  border-width: 0;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $primaryColor;
+  height: 93px;
+  line-height: 93px;
+  padding: 0 25px;
+  min-width: 398px;
+  border-right: $defaultBorder;
+  border-left: $defaultBorder;
+  transition: all ease .2s;
+  outline: none;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #fff;
+    color: $primaryColor;
+    transition: all ease .2s;
+  }
+}
