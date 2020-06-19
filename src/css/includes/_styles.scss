@@ -160,12 +160,17 @@ svg {
     }
   }
   .about-current {
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
     .artist {
       flex: auto;
       width: calc(100% / 7);
       p {
         text-align: center;
-        padding: 0 10px;
         &.artist-name {
           max-height: 36px;
         }
@@ -174,7 +179,7 @@ svg {
         }
       }
       .artist-ava {
-        min-height: 190px;
+        min-height: calc(100vw / 8.5);
         border: $defaultBorder;
         box-sizing: border-box;
         margin: 0 -1px;

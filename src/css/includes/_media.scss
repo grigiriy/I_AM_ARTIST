@@ -56,6 +56,11 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   .about-about {
+    .about-current {
+      p {
+        font-size: 12px;
+      }
+    }
     .about-advantages {
       > .col {
         svg {
@@ -158,6 +163,27 @@
       }
       .about-circles-artist {
         margin-top: -230px;
+      }
+    }
+    .about-current {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        //arrow
+        display: block;
+        width: 100px;
+        animation: artistArrowCTA 5s ease-out 0s 1 normal none;
+      }
+      .about-about-text {
+        padding: 40px 0 20px;
+      }
+      .artist {
+        .artist-ava {
+          width: 120px;
+          height: 168px;
+          margin: 0 auto;
+        }
       }
     }
   }
