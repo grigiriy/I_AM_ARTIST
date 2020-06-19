@@ -160,14 +160,6 @@
         margin-top: -230px;
       }
     }
-    .about-advantages {
-      padding-top: 0;
-      > .col {
-        svg {
-          margin-bottom: 20px;
-        }
-      }
-    }
   }
   .border-center-item {
     border-right: 0;
@@ -632,13 +624,26 @@
 @media (max-width: 575.98px) {
   .about-about {
     .about-advantages {
+      padding-top: 0;
       > .col {
+        &.about-arrow {
+          padding: 0;
+        }
         svg {
-          transform: rotate(-90deg);
+          margin-bottom: 20px;
+          &.desktop {
+            display: none;
+          }
+          &.mobile {
+            display: block;
+            margin-top: -20px;
+            margin-bottom: -20px;
+          }
         }
       }
     }
   }
+
   .main-about {
     .col-bg {
       height: 130px;
