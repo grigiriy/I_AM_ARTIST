@@ -57,6 +57,9 @@
 @media (max-width: 991.98px) {
   .about-about {
     .about-current {
+      .about-about-text {
+        padding: 40px 0 20px;
+      }
       p {
         font-size: 12px;
       }
@@ -174,9 +177,6 @@
         display: block;
         width: 100px;
         animation: artistArrowCTA 5s ease-out 0s 1 normal none;
-      }
-      .about-about-text {
-        padding: 40px 0 20px;
       }
       .artist {
         .artist-ava {
