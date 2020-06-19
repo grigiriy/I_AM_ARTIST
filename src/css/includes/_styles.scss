@@ -55,20 +55,34 @@ svg {
   }
 }
 
-.manifest-about,
+.manifest-about {
+  font-weight: normal;
+  .manifest-about-text {
+    padding: 84px 73px;
+  }
+  .manifest-about-text {
+    text-align: center;
+    h2,
+    .h2 {
+      font-size: 25px;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      margin-bottom: 20px;
+      line-height: 32px;
+    }
+  }
+}
 .about-about {
   font-weight: normal;
   .about-about-text {
     max-width: 660px;
     padding: 70px 0;
   }
-  .manifest-about-text {
-    padding: 84px 73px;
-  }
-  .manifest-about-text,
   .about-about-text {
     text-align: center;
-
     h2,
     .h2 {
       font-size: 25px;
@@ -142,6 +156,33 @@ svg {
           display: none;
           margin-bottom: 0;
         }
+      }
+    }
+  }
+  .about-current {
+    .artist {
+      flex: auto;
+      width: calc(100% / 7);
+      p {
+        text-align: center;
+        padding: 0 10px;
+        &.artist-name {
+          max-height: 36px;
+        }
+        &.artist-loc {
+          padding-top: 15px;
+        }
+      }
+      .artist-ava {
+        min-height: 190px;
+        border: $defaultBorder;
+        box-sizing: border-box;
+        margin: 0 -1px;
+        border-radius: 50% !important;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     }
   }
