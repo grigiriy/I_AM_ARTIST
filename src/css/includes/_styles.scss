@@ -89,7 +89,7 @@ svg {
       line-height: 32px;
       font-family: $secondaryFontFamily;
       -webkit-font-smoothing: antialiased;
-      font-weight: 200;
+      -moz-osx-font-smoothing: greyscale;
       max-width: 660px;
       padding: 70px 0;
     }
@@ -106,6 +106,8 @@ svg {
   }
   .about-headline {
     font-family: $secondaryFontFamily;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
     font-size: 22px;
   }
   .about-circles {
