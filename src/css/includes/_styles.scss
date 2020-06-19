@@ -78,14 +78,6 @@ svg {
 .about-about {
   font-weight: normal;
   .about-about-text {
-    font-family: $secondaryFontFamily;
-    -webkit-font-smoothing: antialiased;
-    font-weight: light;
-    font-weight: 200;
-    max-width: 660px;
-    padding: 70px 0;
-  }
-  .about-about-text {
     text-align: center;
     h2,
     .h2 {
@@ -94,10 +86,14 @@ svg {
 
     p {
       font-style: normal;
-      font-weight: normal;
       font-size: 22px;
       margin-bottom: 20px;
       line-height: 32px;
+      font-family: $secondaryFontFamily;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 200;
+      max-width: 660px;
+      padding: 70px 0;
     }
   }
 
