@@ -78,6 +78,10 @@ svg {
 .about-about {
   font-weight: normal;
   .about-about-text {
+    font-family: $secondaryFontFamily;
+    -webkit-font-smoothing: antialiased;
+    font-weight: light;
+    font-weight: 200;
     max-width: 660px;
     padding: 70px 0;
   }
@@ -107,6 +111,7 @@ svg {
     }
   }
   .about-headline {
+    font-family: $secondaryFontFamily;
     font-size: 22px;
   }
   .about-circles {

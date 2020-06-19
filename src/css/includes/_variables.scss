@@ -2,16 +2,19 @@ $primaryFontWeight: 600;
 $primaryFontSize: 14px;
 $primaryFontFamily: 'Montserrat', sans-serif;
 $primaryFont: $primaryFontSize $primaryFontFamily;
+
+$secondaryFontFamily: 'Noto Serif', sans-serif;
+
 $primaryBgColor: #fff;
-$primaryColor: #5F48E9;
+$primaryColor: #5f48e9;
 $linkColor: #000;
-$linkHoverColor: rgba(0, 0, 0, .7);
-$grayBg: #E5E5E5;
-$borderGreyColor: #C4C4C4;
+$linkHoverColor: rgba(0, 0, 0, 0.7);
+$grayBg: #e5e5e5;
+$borderGreyColor: #c4c4c4;
 $colorDanger: #dc3545;
 $defaultPadding: 35px;
-$subHeaderActiveColor: #93302B;
-$defaultBorderColor: #5F48E9;
+$subHeaderActiveColor: #93302b;
+$defaultBorderColor: #5f48e9;
 $defaultBorder: 3px solid $defaultBorderColor;
 $defaultWhiteBorder: 3px solid #fff;
 $blockMaxWidth: 662px;

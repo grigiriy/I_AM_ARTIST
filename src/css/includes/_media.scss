@@ -56,10 +56,10 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   .about-about {
+    .about-about-text {
+      padding: 40px 10px 20px;
+    }
     .about-current {
-      .about-about-text {
-        padding: 40px 0 20px;
-      }
       p {
         font-size: 12px;
       }
@@ -168,6 +168,12 @@
         margin-top: -230px;
       }
     }
+    .about-targets {
+      padding: 20px;
+      .about-headline {
+        margin-bottom: 5px;
+      }
+    }
     .about-current {
       .desktop {
         display: none;
@@ -180,8 +186,8 @@
       }
       .artist {
         .artist-ava {
-          width: 120px;
-          height: 168px;
+          width: 260px;
+          height: 365px;
           margin: 0 auto;
         }
       }
