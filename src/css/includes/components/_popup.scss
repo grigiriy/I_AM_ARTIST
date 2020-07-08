@@ -200,3 +200,23 @@
     }
   }
 }
+.gallery-arrow {
+  &.mfp-arrow-right {
+    &::before {
+      border-left: 35px solid $primaryColor !important;
+      opacity: 1;
+    }
+    &::after {
+      border-left: 17px solid $primaryColor !important;
+    }
+  }
+  &.mfp-arrow-left {
+    &::before {
+      border-right: 35px solid $primaryColor !important;
+      opacity: 1;
+    }
+    &::after {
+      border-right: 17px solid $primaryColor !important;
+    }
+  }
+}

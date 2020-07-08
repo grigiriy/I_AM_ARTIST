@@ -62,9 +62,12 @@ $(function () {
     $('.open-popup-work__lighbox').magnificPopup({
       type: 'image',
       gallery: {
+        arrowMarkup:
+          '<button type="button" class="mfp-arrow mfp-arrow-%dir% gallery-arrow"></button>', // markup of an arrow button
         enabled: true,
       },
       image: {
+        cursor: 'mfp-auto-cursor',
         markup:
           '<div class="popup-full white-popup">' +
           '<div class="popup-close-btn"><button type="button" class="onClickPopup"></button></div>' +
