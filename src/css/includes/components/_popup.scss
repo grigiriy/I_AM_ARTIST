@@ -1,6 +1,6 @@
 .white-popup {
   position: relative;
-  background: #FFF;
+  background: #fff;
   //padding: 20px;
   width: auto;
   max-width: 800px;
@@ -10,6 +10,9 @@
   &.popup-full {
     max-width: 100%;
     width: 100%;
+    img.mfp-img {
+      padding: 0;
+    }
   }
   .work-content {
     max-width: 800px;
@@ -33,11 +36,11 @@
       border-left: $defaultBorder;
       position: relative;
       outline: none;
-      transition: background-color ease .2s;
+      transition: background-color ease 0.2s;
 
       &:hover {
         background-color: $primaryColor;
-        transition: background-color ease .2s;
+        transition: background-color ease 0.2s;
       }
 
       &:focus,

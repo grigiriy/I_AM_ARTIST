@@ -15,7 +15,7 @@
         width: 370px;
         height: 100%;
         margin: auto;
-
+        cursor: pointer;
       }
     }
   }
@@ -118,7 +118,8 @@
         margin-top: 100px;
       }
 
-      p, span {
+      p,
+      span {
         font-style: normal;
         font-weight: normal;
         font-size: 22px;

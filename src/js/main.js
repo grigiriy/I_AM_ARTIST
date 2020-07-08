@@ -19,10 +19,9 @@ import './modules/_functions';
 // import './modules/_forms'
 
 $(function () {
-  $('.onClickPopup').on('click', function () {
+  $('body').on('click', '.onClickPopup', function () {
     $.magnificPopup.close();
   });
-
   $.extend(true, $.magnificPopup.defaults, {
     callbacks: {
       open: function () {
@@ -58,6 +57,24 @@ $(function () {
       500
     );
   });
+
+  if ($('.open-popup-work__lighbox').length) {
+    $('.open-popup-work__lighbox').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true,
+      },
+      image: {
+        markup:
+          '<div class="popup-full white-popup">' +
+          '<div class="popup-close-btn"><button type="button" class="onClickPopup"></button></div>' +
+          '<div class="popup-content">' +
+          '<div class="mfp-img"></div>' +
+          '</div>' +
+          '</div>',
+      },
+    });
+  }
 
   if ($('.open-popup-work').length) {
     $('.open-popup-work').magnificPopup({
