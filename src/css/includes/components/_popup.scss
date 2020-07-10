@@ -145,6 +145,7 @@
       margin-top: 30px;
       margin-bottom: 40px;
       padding-left: 12.7%;
+      padding-right: 12.7%;
 
       p {
         font-style: normal;
@@ -160,12 +161,17 @@
 
     .artist-notify-ok {
       padding-left: 12.7%;
+      padding-right: 15%;
 
       .ok-btn {
         width: fit-content;
         position: relative;
         margin-right: 33px;
         margin-bottom: 30px;
+
+        svg {
+          width: 100px;
+        }
 
         &:hover {
           cursor: pointer;
@@ -183,7 +189,8 @@
           bottom: 0;
           margin: auto;
           text-align: center;
-          line-height: 77px;
+          line-height: 60px;
+          font-size: 18px;
         }
       }
 
