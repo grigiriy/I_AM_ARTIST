@@ -132,8 +132,8 @@
   }
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+// Small devices (landscape phones, less than 768px) !!set to 769 for correct work in 768px ipad
+@media (max-width: 769px) {
   .main-about {
     .col-bg {
       height: 130px;
@@ -656,7 +656,6 @@
     padding: 50px 0;
   }
 }
-
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .about-about {
@@ -686,9 +685,12 @@
       height: 130px;
     }
   }
+  .white-popup .popup-content .artist-notify-ok .ok-btn {
+    margin-right: -7px;
+  }
   .white-popup .popup-content .artist-notify-ok .ok-btn .ok-text {
     font-size: 12px;
-    top: -20px;
+    top: -11px;
   }
 
   .white-popup .popup-content .artist-list .artist-list-item .list-text {

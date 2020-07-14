@@ -4,6 +4,7 @@ body {
   font: $primaryFont;
   font-weight: $primaryFontWeight;
   border: $defaultBorder;
+  padding-top: 70px;
 }
 
 a {
@@ -13,6 +14,10 @@ a {
     color: inherit;
     text-decoration: underline;
   }
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 h1,
