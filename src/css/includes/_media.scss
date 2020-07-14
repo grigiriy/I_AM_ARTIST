@@ -132,8 +132,8 @@
   }
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+// Small devices (landscape phones, less than 768px) !!set to 769 for correct work in 768px ipad
+@media (max-width: 769px) {
   .main-about {
     .col-bg {
       height: 130px;
@@ -185,6 +185,11 @@
         animation: artistArrowCTA 5s ease-out 0s 1 normal none;
       }
       .artist {
+        .artist-ava {
+          width: 260px;
+          height: 365px;
+          margin: 0 auto;
+        }
         .artist-loc {
           br {
             display: none;
@@ -649,14 +654,6 @@
   }
   .about-circles {
     padding: 50px 0;
-  }
-}
-// ipad portrait only
-@media (max-width: 769px) {
-  .about-about .about-current .artist .artist-ava {
-    width: 260px;
-    height: 365px;
-    margin: 0 auto;
   }
 }
 // Extra small devices (portrait phones, less than 576px)
