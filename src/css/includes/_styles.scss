@@ -4,7 +4,10 @@ body {
   font: $primaryFont;
   font-weight: $primaryFontWeight;
   border: $defaultBorder;
-  padding-top: 70px;
+  padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 70px;
+  }
 }
 
 a {
@@ -59,13 +62,80 @@ svg {
     background-size: cover;
   }
 }
+.profile-about {
+  font-weight: normal;
+  .profile-inner {
+    padding: 48px 62px;
+    @media (max-width: 992px) {
+      padding: 48px 18px;
+    }
+    @media (max-width: 769px) {
+      padding: 48px 36px;
+    }
+    .profile-avatar {
+      border-radius: 85% 30% !important;
+      overflow: hidden;
+      border: $defaultBorder;
+      img {
+        max-width: 100%;
+      }
+    }
+    .profile-about-cv div {
+      font-family: $secondaryFontFamily;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .profile-about-text {
+      h2,
+      .h2 {
+        font-size: 22px;
+        line-height: 27px;
+      }
+      p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+  & + .works-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    .works-wrapper {
+      border-left: $defaultBorder;
+      border-right: $defaultBorder;
+      @media (max-width: 769px) {
+        border: none;
+      }
+      // padding: 0;
+      .works-list {
+        margin-right: -18px;
+        margin-left: -18px;
+        padding-bottom: 48px;
+        @media (max-width: 769px) {
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+        .works-item {
+          .works-image {
+            @media (max-width: 992px) {
+              // min-height: 24vw;
+              max-width: 250px;
+              margin: auto auto 34px auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .manifest-about {
   font-weight: normal;
   .manifest-about-text {
     padding: 84px 73px;
-  }
-  .manifest-about-text {
     text-align: center;
     h2,
     .h2 {
