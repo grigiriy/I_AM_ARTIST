@@ -1,11 +1,5 @@
 # Who / AM
 
-### PREVIEW
-
-```
-https://grigiriy.github.io/I_AM_ARTIST/
-```
-
 ### Installation
 
 ```
