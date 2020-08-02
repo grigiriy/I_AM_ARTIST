@@ -1,4 +1,13 @@
 .popup-work-slider {
+  .col:first-child {
+    min-width: calc(50% - 2px);
+    @media (max-width: 769px) {
+      min-width: 100%;
+    }
+  }
+  .col:last-child {
+    min-width: calc(50% + 2px);
+  }
   .like-container {
     border-bottom: $defaultBorder;
   }
@@ -20,19 +29,37 @@
     }
   }
 
-  &-title {
+  &-price {
     border-top: $defaultBorder;
     border-bottom: $defaultBorder;
     text-align: center;
-    height: 96px;
-    line-height: 94px;
-
+    .col {
+      height: 96px;
+      line-height: 94px;
+    }
     span {
       font-style: normal;
-      font-weight: 500;
-      font-size: 25px;
       color: $primaryColor;
       text-transform: uppercase;
+      font-weight: 500;
+      font-size: 25px;
+      display: block;
+    }
+    .default-btn {
+      display: block;
+      text-align: center;
+      border-right: 0;
+      border-left: $defaultBorder;
+      // left: -2px;
+      a {
+        color: white;
+      }
+      &:hover {
+        a {
+          text-decoration: none;
+          color: $primaryColor;
+        }
+      }
     }
   }
 
@@ -105,44 +132,33 @@
         margin: auto;
       }
     }
-
     &-text {
       border-left: $defaultBorder;
       padding: 50px 10px 50px 50px;
-      min-height: 620px;
-
-      .work-price {
-        font-weight: 500;
-        font-size: 25px;
-        display: block;
-        margin-top: 100px;
-      }
-
+      // min-height: 620px;
+      height: 100%;
       p,
       span {
         font-style: normal;
         font-weight: normal;
-        font-size: 22px;
-        margin-bottom: 20px;
+        // font-size: 22px;
+        // margin-bottom: 20px;
+        font-size: 12px;
+        margin-bottom: 14px;
 
         &:last-child {
           margin-bottom: 0;
         }
       }
-    }
-  }
-
-  &-buy {
-    border-top: $defaultBorder;
-
-    .default-btn {
-      display: block;
-      text-align: center;
-      border-right: 0;
-
-      &:hover {
-        text-decoration: none;
+      h1 {
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: normal;
+        margin-bottom: 0;
       }
+    }
+    &-author {
+      padding-bottom: 20px;
     }
   }
 }

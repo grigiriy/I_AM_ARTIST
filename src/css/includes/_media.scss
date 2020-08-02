@@ -637,12 +637,13 @@
     border-left: 0;
   }
 
-  .popup-work-slider-info-video,
-  .popup-work-slider-info-text {
-    min-height: 560px;
-  }
+  // .popup-work-slider-info-video,
+  // .popup-work-slider-info-text {
+  //   min-height: 560px;
+  // }
   .popup-work-slider-preview {
-    height: 330px;
+    // height: 330px;
+    height: 100%;
 
     .popup-work-slider-item {
       height: 330px;
